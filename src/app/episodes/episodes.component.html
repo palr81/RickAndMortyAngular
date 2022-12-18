@@ -1,0 +1,25 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 mt-5">
+        <h1>Episodes</h1>
+    </div>
+    <div class="col-12 my-3">
+      <table class="table table-striped">
+        <thead class="bg-dark table-dark">
+          <tr>
+            <th>Name</th>
+            <th>Episode</th>
+            <th>Air Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of api()">
+            <td>{{i.name}}</td>
+            <td>{{i.episode}}</td>
+            <td>{{i.air_date}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
